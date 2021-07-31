@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vipul's App</title>
+</head>
+<body>
+	<h2>Vehicle's Selling Price Prediction</h3>
+
+</body>
+
+<div>
+  <form action="/predict" method="POST">
+    <label for="year">Enter the year when the vehicle was bought:</label>
+		<input type="number" placeholder="Eg: 2008, 2004" name="year">
+    <br>
+    <label for="pp">Enter the present price (in lakhs) INR:</label>
+		<input type="number" placeholder="Eg: 5.55, 0.70" name="pp"  step=".01">
+    <br>
+    <label for="km">Enter the distance (in KM) the vehicle is driven:</label>
+		<input type="number" placeholder="Eg: 26000" name="km" >
+    <br>
+    <label for="trnsmn">Enter the transmission type: Manual</label>
+		<input type="radio" name="trnsmn" value="Manual" >
+    <label for="trnsmn">Automatic:</label>
+		<input type="radio" name="trnsmn" value="Automatic" >
+    <br>
+    <label for="fuel">Enter the type of fuel required for your vehicle:</label>
+    	<select name="fuel">
+		  <option value="Diesel">Diesel</option>
+		  <option value="Petrol">Petrol</option>
+		  <option value="CNG">CNG</option>
+		</select>
+	<br>
+	<label for="st">Tell if seller is Dealer</label>
+		<input type="radio" name="st" value="Dealer" >
+    <label for="st">or Individual:</label>
+		<input type="radio" name="st" value="Individual" >
+    <br>
+    <label for="vt">Is it a 2-wheeler</label>
+		<input type="radio" name="vt" value="2wheeler" >
+    <label for="vt">or 4-wheeler:</label>
+		<input type="radio" name="vt" value="4wheeler" >
+    <br>
+    <label for="owner">Number of previous owners of the car.:</label>
+		<input type="number" placeholder="Eg: 0, 1, 2" name="owner" >
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</html>
